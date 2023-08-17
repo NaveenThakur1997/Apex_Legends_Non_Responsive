@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.background{
+    height: 100%;
+    width: 100%;
+    background-image: url(background\ image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.background>nav{
+    align-items: center;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    height: 12%;
+    width: 100%;
+    color: white;
+    background-color: #2120204e;
+    /* border: 3px solid white; */
+    backdrop-filter: blur(5px)
+}
+
+.background>nav>ul{
+    display: flex;
+    gap: 2vmax;
+    list-style: none;
+    font-size: 24px;
+    font-weight: 600;
+}
+.background>nav>ul>li{
+    padding: 29px 20px;
+    position: relative;
+    cursor: pointer;
+    /* border: 2px solid red; */
+}
+.background>nav>ul>li::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0%;
+    bottom: 0px;
+    transition: 0.06s;
+}
+
+.background>nav>ul>li:hover:after{
+    width: 100%;
+    display: initial;
+}
+
+.season>h4{
+    color: rgb(250, 68, 35);
+    position: absolute;
+    z-index: 2;
+    left: 8%;
+    letter-spacing: 2px;
+    
+}
+.season>h5{
+    letter-spacing: 3px;
+
+   top: 28%;
+    position: absolute;
+    z-index: 2;
+    left: 8%;
+    
+}
+
+.background>nav>ul>li:hover .play{
+    display: initial;
+}
+
+nav>h1>img:hover{
+    cursor: pointer;
+}
+
+.play{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0.1) 44%, rgba(224,4,4,0.47951680672268904) 100%);
+    display: none;
+}
+
+nav>h5{
+    color: transparent;
+    
+}
+
+.scoreboard{
+    margin-left: 1%;
+    position: relative;
+    margin-top: 2%;
+    height: 400px ;
+    width: 350px;
+    border: 2px solid red;
+}
+
+.sbheading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5%;
+    height: 20%;
+    color: white;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.441);
+}
+.sbheading>h6{
+    font-size: 14px;
+}
+.sbheading>h3{
+    font-size: 24px;
+}
+.deathp0{
+    margin-top: 3px;
+    margin-bottom: 2px;
+    margin-left: 38.5%;
+    height: 5px;
+    width: 215px;
+    background-color: rgba(204, 195, 195, 0.644);
+
+}
+.deathp0>img{
+    position: absolute;
+    top: 1%;
+    left: 5.5%;
+    z-index: 3;
+   
+}
+.score{
+    padding: 2%;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    color: white;
+    backdrop-filter: blur(5px);
+    background-color: rgba(47, 79, 138, 0.676);
+}
+
+.score>h3{
+    margin-bottom: 5px;
+    margin-left: 14px;
+}
+.score>span{
+    margin-left: 14px;
+}
+.score>button{
+    color: white;
+    background-color: rgba(245, 51, 51, 0.575);
+    outline: none;
+    border: none;
+    padding: 5px 9px;
+    font-weight: 600;
+}
+.score>button:hover{
+    cursor: pointer;
+    scale: 0.98;
+    border: 1px solid rgba(255, 255, 0, 0.416);
+
+}
+
+.scre-content{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    margin: 15px;
+    border-bottom: 5px solid rgba(255, 0, 0, 0.568);
+    line-height: -5px;
+
+}
+.scre-content>h5{
+    cursor: pointer;
+}
+
+.events{
+    display: flex;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    border: 3px solid rgba(247, 247, 247, 0.71);
+    top: 88%;
+    background-color: rgba(47, 62, 16, 0.514);
+}
+
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 15%;
+    /* border: 2px solid white; */
+}
+
+.one>img:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+.two{
+    height: 100%;
+    width: 55%;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.three{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 30%;
+    /* border: 2px solid white; */
+}
+.three>img:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.up{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+
+.down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.dash1{
+    height: 5px;
+    width: 25%;
+    background-color: rgb(14, 246, 242);
+}
+.dash2{
+    height: 5px;
+    width: 25%;
+    background-color: white;
+}
+.dash3{
+    height: 5px;
+    width: 25%;
+    background-color: white;
+}
+
+
+.prizetracket{
+    margin-left: 1%;
+    padding-right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 350px;
+    border: 3px solid yellow;
+    margin-top: 2%;
+    color: white;
+    background-image: url(olive-green-11-920x518.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.prizetracket>h3{
+    font-size: 18px;
+    position: absolute;
+    margin-left: 8.5%;
+}
+.prizetracket>h3:hover{
+    scale: 0.98;
+    cursor: pointer;
+}
+
+.endicons{
+    margin-left: 1%;
+    margin-top: 2%;
+    height: 60px;
+    width: 350px;
+    /* border: 3px solid white; */
+    display: flex;
+    gap: 8px;
+}
+
+.eione{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.47951680672268904) 17%, rgba(255,255,255,.6) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 19%;
+    border: 3px solid rgba(255, 255, 255, 0.651);
+}
+.eitwo{
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,0.47951680672268904) 17%, rgba(255,255,255,.6) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 19%;
+    border: 3px solid rgba(255, 255, 255, 0.651);
+}
+.eithree{
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,0.47951680672268904) 17%, rgba(255,255,255,.6) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 37%;
+    color: white;
+    border: 3px solid rgba(255, 255, 255, 0.651);
+}
+.eithree>h5{
+    
+    font-size: 30px;
+    padding-left: 15px;
+    padding-top: 10px;
+    
+}
+.eifour{
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,0.47951680672268904) 17%, rgba(255,255,255,.6) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 19%;
+    border: 3px solid rgba(255, 255, 255, 0.651);
+   
+}
+
+
+.eee:hover{
+    scale: 0.98;
+    cursor: pointer;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(2, 2, 2, 0.5) 44%, rgba(211, 4, 4, 0.26) 100%);
+}
+
+.playgame{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+    /* border: 2px solid white; */
+    height: 250px;
+    width: 350px;
+    
+}
+
+.team{
+    padding-left: 1%;
+    background-image: url(aa.jpg);  
+    background-position: top;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    height: 56%;
+    width: 100%;
+    border: 2px solid rgb(248, 242, 242);
+    
+}
+
+.team>.crossplay>h3{
+    padding-left: 5px;
+}
+.readytoplay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    width: 100%;
+    border: 2px solid rgb(210, 206, 206);
+    /* background-image: url(india-fence-chain-link-fencing-manufacturing-wire-metal-iron-mesh-25aaf82cb3ac5cb8212feb91ae2f3292.png); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.readytoplay>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.team>.crossplay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+    height: 33px;
+    /* background-color: rgba(21, 21, 21, 0.68); */
+    font-weight: 600;
+    color: white;
+}
+
+.trios-team{
+    padding: 1%;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 13%;
+}
+.ttone>h3{
+font-size: 26px;
+letter-spacing: 2px;
+}
+.ttone>h3:hover{
+font-size: 24px;
+margin-bottom: 3px;
+cursor: pointer;
+}
+.ttone>h5{
+    
+font-size: 18px;
+}
+.ttone>h5:hover{
+cursor: pointer;
+font-size: 17px;
+}
+
+.tttow:hover{
+    scale: 0.95;
+    cursor: pointer;
+}
+
+
+/* .readytoplay:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(239, 238, 238, 0.231) 25%, rgba(248, 56, 56, 0.486) 100%);
+    border-bottom: 10px solid red;
+} */
+
+.readytoplay>h1{
+    position: absolute;
+    z-index: 10;
+    color: white;
+    font-size: 40px;
+}
+.readytoplay:hover{
+    scale: 0.99;
+    cursor: pointer;
+}
+
+.gifs{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    left: 35%;
+    bottom: 5%;
+    height: 100px;
+    width: 500px;
+    /* border: 3px solid red; */
+}
+
+.gifs>img{
+animation: rotation 4s linear infinite both;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
